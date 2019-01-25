@@ -10,17 +10,21 @@ def main():
 def ex1():
 
     passW = "code"
-
+    # KEY: This works OK, but you don't have to check upper and lower. Just one will do
     while (True):
         ask = input("enter password. q to quit")
         if ask == passW:
             print("Access Granted")
             break
-        elif ask == "q".upper():
+        # elif ask == "q".upper():
+        #     break
+        #
+        # elif ask == "Q".lower():
+        #    break
+        elif ask.lower() == "q"
             break
 
-        elif ask == "Q".lower():
-            break
+
 
 
 
@@ -31,7 +35,7 @@ def ex2():
 
 
 
-
+    # KEY: Remember comments next time Chief!
     def ex2Helper(num1,num2,num3,operation):
         if operation == "add":
             print("The SUM of "+ str(num1),str(num2),str(num3)+ " is "+str((num1+num2+num3)))
